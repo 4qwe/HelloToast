@@ -34,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
         ++counta;
         teevee.setText(Integer.toString(counta));
         if (counta > 5) {
-            Button b = (Button) view; b.setBackgroundColor(Color.GREEN); //der View aus der die Methode extrahiert wurde, aus
-            //der XML, wird hier mit gegeben
+            Button b = (Button) view;
+            b.setBackgroundColor(Color.GREEN); //der View aus der die Methode extrahiert wurde, aus
+            //der XML, wird hier mit gegeben-- ie der BUTTON (vgl main.xml)
+            // "view" innerhalb einer Methode, ist damit immer das view-Element aus der die Methode gerufen wird
             }
     }
 }
